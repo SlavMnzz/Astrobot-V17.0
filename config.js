@@ -4,10 +4,10 @@ import { fileURLToPath } from 'url'
 
 /*============== INFO OWNER ==============*/
 global.link = {
-	ig: 'https://taplink.cc/xmannxyz.dev',
+	ig: 'http://처녀-사냥꾼',
 	gh: 'https://github.com/SlavMnzz',
-	gc: 'https://chat.whatsapp.com/H1y1QmjuxQ16eAvMNv9UUs',
-	web: 'https://taplink.cc/xmannxyz.dev',
+	gc: 'https://chat.whatsapp.com/GoxXrKlh2QSHfEAXPioIyP',
+	web: 'http://처녀-사냥꾼',
 	nh: 'https://nhentai.net/g/365296/'
 }
 
@@ -23,14 +23,14 @@ global.pay = {
 /*============== NOMOR ==============*/
 global.info = {
 	nomorbot: '62857059457519',
-	nomorown: '-',
-	namebot: 'Astrobot - MD',
-	nameown: '@frdyfrmnsyh.dev'
+	nomorown: '62857059457512',
+	namebot: 'ᴀsᴛʀᴏʙᴏᴛ sᴛᴀʙʟᴇ ᴠᴇʀsɪᴏɴ',
+	nameown: '@xғ.ғɪʀᴍᴀɴsʏᴀʜ'
 }
 
 /*============== STAFF ==============*/
 global.owner = [
-    ['-', '@frdyfrmnsyh.dev', 'true']
+    ['62857059457512', '@xғ.ғɪʀᴍᴀɴsʏᴀʜ', 'true']
     // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -54,21 +54,21 @@ global.APIKeys = {
     'https://api.zahwazein.xyz': 'zenzkey_8bb60993ae',
     'https://api.xteam.xyz': 'cristian9407',
     'https://api.lolhuman.xyz': 'fafbc90143ed7cfe7a2907f9',
-    'https://api.itsrose.life': '_',
-    'https://skizo.tech' : '-' //isi mke api lu sndiri di https://skizo.tech (buat fitur ai) gk di isi jg gpp
+    'https://api.itsrose.life': '_', 
+    'https://skizo.tech' : 'Zxfrcv' // ᴅᴀᴘᴇᴛɪɴ ᴀᴘɪᴋᴇʏ ᴅɪ https://skizo.tech
 }
 
 /*============== WATERMARK ==============*/
-global.wm = '© Astrobot V17.0' //Main Watermark
-global.author = '@frdyfrmnsyh.dev'
-global.wms = 'ga usah toxic'   //ini gk usah diganti buat stiker antitoxic
-global.wmss = '@botmd'  //ini gk usah diganti buat stiker antitoxic
-global.xzn = '-' // isi mke api lu sndiri di https://skizo.tech (buat fitur ai) gk di isi jg gpp
-global.openai = '-'  //api key bisa didapatkan dari https://platform.openai.com/api-keys
-global.org = '-'  //openAI Organization name ,: https://platform.openai.com/account/org-settings
+global.wm = '©ᴀsᴛʀᴏʙᴏᴛᴢ || sᴛᴀʙʟᴇ ᴠᴇʀsɪᴏɴ' //Main Watermark
+global.author = '@xᴍᴀɴ.xʏᴢ/ᴅᴇᴠ'
+global.wms = 'ᴊᴀɴɢᴀɴ ᴛᴏxɪᴄ ʙᴀɴɢ'   //ini gk usah diganti buat stiker antitoxic
+global.wmss = 'ɴɢᴇʟᴀɴɢɢᴀʀ ʀᴇsᴇᴛ'  //ini gk usah diganti buat stiker antitoxic
+global.xzn = 'Zxfrcv' // isi mke api lu sndiri di https://skizo.tech (buat fitur ai) gk di isi jg gpp
+global.openai = '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'  //api key bisa didapatkan dari https://platform.openai.com/api-keys
+global.org = 'org-SWODddYZ74SfHUZ4cP1zErIM'  //openAI Organization name ,: https://platform.openai.com/account/org-settings
 
 /*============== TEXT ==============*/
-global.wait = '*_Sedang diproses......_*'
+global.wait = '_「▰▰▰▱▱▱▱▱」ʟ ᴏ ᴀ ᴅ ɪ ɴ ɢ - ʙ ᴀ ɴ ɢ ...._'
 
 /*=========== TYPE DOCUMENT ===========*/
 global.doc = {
@@ -335,10 +335,10 @@ global.hwaifu = [
 ]
 
 /*============== STICKER WM ==============*/
-global.stickpack = 'made with astrobot'
-global.stickauth = '@frdyfrmnsyh.dev'
+global.stickpack = 'ᴀsᴛʀᴏʙᴏᴛᴢ ᴍᴅ\n⫹⫺ sᴛᴀʙʟᴇ ᴠᴇʀsɪᴏɴ'
+global.stickauth = 'ʙᴏᴛ ɴᴜᴍʙᴇʀ:\n⫹⫺+62857059457519'
 
-global.multiplier = 500 // The higher, The harder levelup
+global.multiplier = 79 // Biarin aja
 
 /*============== EMOJI ==============*/
 global.rpg = {
