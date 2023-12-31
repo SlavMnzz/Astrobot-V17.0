@@ -4,7 +4,7 @@ export function before(m) {
     let user = global.db.data.users[m.sender]
     if (user.afk > -1) {
         m.reply(`
-Kamu berhenti AFK *${user.afkReason ? ' setelah : ' + user.afkReason : ''}*
+Kamu berhenti AFK *${user.afkReason ? ' Setelah : ' + user.afkReason : ''}*
 Selama : *${(new Date - user.afk).toTimeString()}*
 `.trim())
         user.afk = -1
@@ -21,7 +21,7 @@ Selama : *${(new Date - user.afk).toTimeString()}*
         let reason = /wa.me\/settings/i.exec(user.afkReason) ? '#HIDDEN#' : user.afkReason || ''
         m.reply(`
 Dia sedang AFK
-Dengan Alasan : ${reason ? 'dengan alasan ' + reason : 'tanpa alasan'}
+Dengan Alasan : ${reason ? 'dengan alasan : ' + reason : 'tanpa alasan : '}
 Selama ${(new Date - afkTime).toTimeString()}
 `.trim())
     }

@@ -9,36 +9,50 @@ const { generateWAMessageFromContent, proto } = (await import('@adiwajshing/bail
 
 const defaultMenu = {
   before: `
-❏ *Nama Bot:* %me
-❏ *Username:*  %name 
-❏ *Premium:* %prems 
-❏ *Limit:* %limit 
-❏ *Role:* %role
-❏ *Level:* %level
-❏ *Xp:* %exp / %maxexp
-❏ *Total Xp:* %totalexp
-
 *${ucapan()} %name!*
-❏ *Tanggal:* %week %weton
-❏︎ *Date:* %date
-❏︎ *Tanggal Islam:* %dateIslamic
-❏︎ *Waktu:* %time
 
-❏︎ *Platform:* %platform
-❏︎ *Type:* Node.JS
-❏︎ *Uptime:* %muptime
+乂  *ᴜ s ᴇ ʀ - ꜱ ᴛ ᴀ ᴛ ɪ ꜱ ᴛ ɪ ᴄ*
+ ┌─────
+ ┊• ᴜsᴇʀɴᴀᴍᴇ: %me
+ ┊• ᴘʀᴇᴍɪᴜᴍ: %%prems
+ ┊• ʟɪᴍɪᴛ: %limit
+ ┊• ʀᴏʟᴇ: %role
+ ┊• ʟᴇᴠᴇʟ: %level
+ ┊• ᴇxᴘ: %exp / %maxexp
+ ┊• ᴛᴏᴛᴀʟ xᴘ: %totalexp
+ ╰────────────
  
-*_⏩ .allmenu to display all bot features_*
+ 乂  *ʙ ᴏ ᴛ - ꜱ ᴛ ᴀ ᴛ ɪ ꜱ ᴛ ɪ ᴄ*
+ ┌───────
+ ┊• ᴅᴀᴛᴀʙᴀsᴇ: %totalreg
+ ┊• ᴛᴀɢs: %tag
+ ┊• sᴛᴀᴛᴜs: %prem
+ ┊• ʟɪᴍɪᴛ: %limit
+ ┊• ʀᴏʟᴇ: %role
+ ┊• ʟᴇᴠᴇʟ: %level
+ ┊• ᴘʟᴀᴛғᴏʀᴍ: %platform
+ ┊• ᴜᴘᴛɪᴍᴇ: %muptime
+ ╰────────────
+ 
+ 乂  *ᴛ ɪ ᴍ ᴇ ʟ ɪ ɴ ᴇ*
+ ┌───────
+ ┊• ᴛᴀɴɢɢᴀʟ: %week %weton
+ ┊• ᴅᴀᴛᴇ: %date
+ ┊• ɪsʟᴀᴍɪᴄ ᴅᴀᴛᴇ: %dateIslamic
+ ┊• ᴡᴀᴋᴛᴜ: %time
+ ╰────────────
+  *.ᴀʟʟᴍᴇɴᴜ* ᴜɴᴛᴜᴋ ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ
+   sᴇʟᴜʀᴜʜ ғɪᴛᴜʀ ʙᴏᴛ
 %readmore
 `.trimStart(),
-  header: '╭───『 %category 』',
-  body: '│❏ %cmd',
-  footer: '╰––––––––––––––༓',
-  after: 'Astrobot-MD V17.0',
+  header: `┌── *%category*`,
+  body: '┊• .ᴀɪᴍᴇɴᴜ\n┊• .ᴀɴɪᴍᴇᴍᴇɴᴜ\n┊• .ᴅᴏᴡɴʟᴏᴀᴅᴍᴇɴᴜ\n┊• .ɢᴀᴍᴇᴍᴇɴᴜ\n┊• .ɢʀᴏᴜᴘᴍᴇɴᴜ\n┊• .ɪɴғᴏᴍᴇɴᴜ\n┊• .ɪɴᴛᴇʀɴᴇᴛᴍᴇɴᴜ\n┊• .ɪsʟᴀᴍɪᴄᴍᴇɴᴜ\n┊• .ᴍᴀɪɴᴍᴇɴᴜ\n┊• .ᴍᴀᴋᴇʀᴍᴇɴᴜ\n┊• .ᴍᴇɴᴜᴘʀᴇᴍɪᴜᴍ\n┊• .ᴏᴡɴᴇʀᴍᴇɴᴜ\n┊• .ǫᴏᴜᴛᴇsᴍᴇɴᴜ\n┊• .ʀᴘɢᴍᴇɴᴜ\n┊• .sᴛɪᴋᴇʀᴍᴇɴᴜ\n┊• .ᴛᴏᴏʟsᴍᴇɴᴜ',
+  footer: `╰──────────`,
+  after: '\n*ᴀsᴛʀᴏʙᴏᴛᴢ sᴛᴀʙʟᴇ ᴠᴇʀsɪᴏɴ*',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
-'vynaamenu': 'L I S T - M E N U',
+'vynaamenu': 'ʟ ɪ s ᴛ - ᴍ ᴇ ɴ ᴜ',
 }
  
   try {
@@ -197,14 +211,19 @@ let tags = {
       text: text,
       contextInfo: {
       externalAdReply: {
-      title: `ᴀꜱᴛʀᴏʙᴏᴛ | xᴅ`,
-      body: global.author,
+      title: `ᴀsᴛʀᴏʙᴏᴛᴢ sᴛᴀʙʟᴇ ᴠᴇʀsɪᴏɴ`,
+      body: `@xғ.ғɪʀᴍᴀɴɴ.ᴅᴇᴠ`,
       thumbnailUrl: ihu,
-      sourceUrl: `https://chat.whatsapp.com/IcDg7L47FtiIsc7Spt4WZy`,
+      sourceUrl: `http://처녀사냥꾼처녀냥`,
       mediaType: 1,
       renderLargerThumbnail: true
 }}}, { quoted: m})
-    /*await conn.adReply(m.chat, text.trim(), wish() + ' ' + name, '', fs.readFileSync('./media/thumbnail.jpg'), link.web, m)*/
+    /*await conn.adReply(m.chat, text.trim(), wish() + ' ' + name, '', fs.readFileSync('./media/thumbnail.jpg'), link.web, m)
+  title: "ᴀsᴛʀᴏʙᴏᴛᴢ sᴛᴀʙʟᴇ ᴠᴇʀsɪᴏɴ",
+      body: '@xғ.ғɪʀᴍᴀɴɴ.ᴅᴇᴠ',
+      thumbnailUrl: ihu,
+      sourceUrl: `http://처녀사냥꾼처녀냥`,  
+    */
           let vn = "./vn/menuu.mp3"
       
 	conn.sendFile(m.chat, vn, "menuu.mp3", null, m, true, {
@@ -217,7 +236,7 @@ let tags = {
 }
 handler.help = ['menu']
 handler.tags = ['main']
-handler.command = /^(menu|listmenu|menubot|\?)$/i
+handler.command = /^(ᴍᴇɴᴜ|menu|listmenu|menulist|\?)$/i
 
 handler.register = false
 handler.exp = 3
@@ -250,18 +269,18 @@ function clockStringP(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  let res = "Kok Belum Tidur Kak? 🥱"
+  let res = "sᴇʟᴀᴍᴀᴛ ʙᴇɢᴀᴅᴀɴɢ"
   if (time >= 4) {
-    res = "Pagi Kak 🌄"
+    res = "sᴇʟᴀᴍᴀᴛ ᴘᴀɢɪ 🌄"
   }
   if (time >= 10) {
-    res = "Siang Kak ☀️"
+    res = "sᴇʟᴀᴍᴀᴛ sɪᴀɴɢ ☀️"
   }
   if (time >= 15) {
-    res = "Sore Kak 🌇"
+    res = "sᴇʟᴀᴍᴀᴛ sᴏʀᴇ 🌇"
   }
   if (time >= 18) {
-    res = "Malam Kak 🌙"
+    res = "sᴇʟᴀᴍᴀᴛ ᴍᴀʟᴀᴍ 🌙"
   }
   return res
 }
